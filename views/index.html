@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fade Out</title>
+    <meta name="description" content="A cool thing made with Glitch">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Fade Out">
+  
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        Fade Out
+      </h1>
+      <p id="saved">
+        Saved
+      </p>
+    </header>
+
+    <main>
+      <p class="bold">The Last Script Editor You'll Ever Need Online</p>
+      <div id="editor" contenteditable="true" onkeyup="save()">
+        Loading...
+      </div>
+    </main>
+
+    <footer>
+      <button onclick="cmd('justifyRight','')">
+        RIGHT
+      </button>
+      <button onclick="cmd('justifyCenter','')">
+        CENTER
+      </button>
+      <button onclick="cmd('justifyLeft','')">
+        LEFT
+      </button>
+      <button onclick="cmd('indent','')">
+        INDENT
+      </button>
+      <button onclick="cmd('outdent','')">
+        OUTDENT
+      </button>
+      <br>
+      <br>
+      <a href="/print" target="_blank">
+        PRINT
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
